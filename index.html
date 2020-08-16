@@ -1,31 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Thomas Cavallazzi</title>
 
-    <link rel="stylesheet" type="text/css" href="./dist/css/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="./dist/css/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="./dist/css/examples.css">
+    <link rel="stylesheet" type="text/css" href="./dist/css/fancybox/jquery.fancybox-1.3.4.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/timeline.css">
 </head>
 <body>
+    <ul id="menu">
+        <li data-menuanchor="accueil"><a href="#accueil">Accueil</a></li>
+        <li data-menuanchor="agregation"><a href="#agregation">Agrégation</a></li>
+        <li data-menuanchor="stages"><a href="#stages">Stages</a></li>
+        <li data-menuanchor="curriculum_vitae"><a href="#curriculum_vitae">CV</a></li>
+    </ul>
+
     <div id="fullpage">
-        <div class="section active" id="section0"><h1>fullPage.js</h1></div>
-        <div class="section" id="section1">
-            <div class="slide "><h1>Simple Demo</h1></div>
-            <div class="slide active"><h1>Only text</h1></div>
-            <div class="slide"><h1>And text</h1></div>
-            <div class="slide"><h1>And more text</h1></div>
+        <!-- HOME SECTION -->
+        <div class="section active" id="home">
+            <div class="intro">
+                <div class="title-container">
+                    <h1>Thomas Cavallazzi</h1>
+                </div>
+
+                <p>
+                    Bienvenue sur ma page.<br>
+                    J'étudie à l'ENS Rennes et à l'Université de Rennes 1 depuis 2016 et j'ai
+                    passé l'agrégation de Mathématiques en 2019. Cette année, je poursuis en Master 2 Mathématiques
+                    fondamentales orienté Probabilités et EDP à l'Université de Rennes 1.
+                    <br><br>
+                    Vous trouverez sur cette page quelques documents que j'ai rédigés, notamment à l'issue de stages
+                    de recherche et également à l'issue de l'année de préparation à l'agrégation. N'hésitez surtout pas
+                    à me contacter si vous remarquez des erreurs ou si vous avez des questions !
+                </p>
+            </div>
         </div>
-        <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-        <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+
+        <!-- AGREG SECTION -->
+        <div class="section" id="aggregation">
+            <div class="slide">
+                <h1>Agrégation</h1>
+            </div>
+            <div class="slide"></div>
+        </div>
+
+        <!-- STAGE SECTION -->
+        <div class="section" id="traineeship">
+            <h1>Stages</h1>
+            <p>
+                Cette page contient les deux rapports de stage que j'ai rédigés au cours de ma formation à l'ENS Rennes.
+            </p>
+
+            <div class="timeline">
+                <div class="container right to-left">
+                    <div class="content">
+                        <h2>2018</h2>
+                        <p>
+                            À la fin de mon Master 1, j'ai effectué un stage au LPSM ( Paris ) encadré par
+                            François Bolley. J'ai travaillé sur la théorie de transport optimal avec une
+                            application à l'équation de Boltzmann, notamment en ce qui concerne la convergence
+                            vers l'équilibre.
+                            <br><br>
+                            <a fancybox class="iframe" href="assets/pdf/Transport_optimal.pdf">Consulter le mémoire</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2017</h2>
+                        <p>
+                            À la fin de ma Licence 3, j'ai effectué un stage à l'IMJ-PRG ( Paris ) encadré
+                            par Pierre-Antoine Guihéneuf. Mon stage portait sur l'étude des difféomorphismes du cercle.
+                            Plus précisément, si on considère l'orbite d'un point par ce difféomorphisme, que peut-on
+                            dire de la suite obtenue lorsqu'on regarde le dérivée de notre difféomorphisme le long de
+                            cette orbite de points ?
+                            <br><br>
+                            <a fancybox class="iframe" href="assets/pdf/Mémoire_stage.pdf">Consulter le mémoire</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV SECTION -->
+        <div class="section" id="cv">
+            <iframe src="./assets/pdf/CV_Thomas_Cavallazzi.pdf"></iframe>
+        </div>
     </div>
 
+    <div id="footer">
+        <p>
+            Contactez-moi :
+            <a href="mailto:thomas.cavallazzi@ens-rennes.fr">thomas.cavallazzi@ens-rennes.fr</a>
+        </p>
+    </div>
 
-        <script type="text/javascript" src="./dist/js/fullpage.min.js"></script>
-        <script type="text/javascript">
-            var myFullpage = new fullpage('#fullpage', {
-                licenseKey: null,
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
-            });
-        </script>
+    <script type="text/javascript" src="./dist/js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="./dist/js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="./dist/js/jquery.easing-1.3.pack.js"></script>
+
+    <script type="text/javascript" src="./dist/js/fullpage.min.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#bbb5bd', '#c5c3c6', '#dcdcdd', 'whitesmoke'],
+            menu: '#menu',
+            anchors: ['accueil', 'agregation', 'stages', 'curriculum_vitae'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Accueil', 'Agrégation', 'Stages', 'CV'],
+            slidesNavigation: true
+        });
+
+        $("[fancybox]").fancybox({
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'speedIn':	250,
+            'speedOut':	250,
+            'overlayShow': true,
+            'width': '80%',
+            'height': '90%'
+        });
+    </script>
 </body>
 </html>
