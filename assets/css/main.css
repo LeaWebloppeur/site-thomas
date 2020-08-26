@@ -10,8 +10,20 @@ a[fancybox] span {
 }
 
 a[fancybox]:hover {
-    color: #565656;
+    color: #444;
     transform: scale(1.03);
+}
+
+#menu li.active:hover {
+    background-color: rgba(0,0,0, 0.5);
+}
+
+#menu li.active a:hover {
+    color: #FFF;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #333;
 }
 
 .pdf-icon {
@@ -19,8 +31,9 @@ a[fancybox]:hover {
     vertical-align: middle;
 }
 
-h1 {
-    font-size: 4em;
+.window-icon {
+    width: 20px;
+    vertical-align: middle;
 }
 
 #home .title-container {
@@ -40,6 +53,8 @@ h1 {
     width: 65%;
     font-size: 1.25rem;
     color: rgba(0,0,0,.7);
+    text-align: justify;
+    text-align-last: left;
 }
 
 #aggregation .fp-controlArrow {
@@ -95,7 +110,8 @@ h1 {
 
 #aggregation h3,
 #aggregation p,
-#aggregation table {
+#aggregation table,
+#aggregation ul {
     max-width: 85%;
 }
 
@@ -105,9 +121,14 @@ h1 {
     text-align: justify;
 }
 
-#aggregation p.left {
+#aggregation p.left,
+#aggregation ul.left {
     display: block;
     margin: 0 auto;
+}
+
+#aggregation ul.left li {
+    text-align: left;
 }
 
 #aggregation table {
@@ -118,6 +139,10 @@ h1 {
 
 #aggregation table td {
     padding: 5px 0;
+}
+
+#aggregation a {
+    color: #444;
 }
 
 #traineeship h1 {
@@ -141,6 +166,7 @@ h1 {
 #traineeship .timeline p {
     color: #444;
     font-size: 100%;
+    text-align: justify;
 }
 
 #cv iframe {
@@ -148,6 +174,7 @@ h1 {
     height: 80vh;
     border: none;
     border-radius: .5rem;
+    background-color: #525659;
 }
 
 #footer {
@@ -155,7 +182,7 @@ h1 {
     width: 100%;
     height: 40px;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .07);
+    background-color: rgba(0, 0, 0, .2);
     text-align: center;
     line-height: 40px;
 }
@@ -187,5 +214,5 @@ h1 {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgba(0,0,0,.1); }
+    50% { border-color: rgba(0,0,0,0); }
 }

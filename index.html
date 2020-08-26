@@ -11,263 +11,434 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/timeline.css">
 </head>
 <body>
-    <ul id="menu">
-        <li data-menuanchor="accueil"><a href="#accueil">Accueil</a></li>
-        <li data-menuanchor="agregation"><a href="#agregation">Agrégation</a></li>
-        <li data-menuanchor="stages"><a href="#stages">Stages</a></li>
-        <li data-menuanchor="curriculum_vitae"><a href="#curriculum_vitae">CV</a></li>
-    </ul>
+<ul id="menu">
+    <li data-menuanchor="accueil"><a href="#accueil">Accueil</a></li>
+    <li data-menuanchor="agregation"><a href="#agregation">Agrégation</a></li>
+    <li data-menuanchor="stages"><a href="#stages">Stages</a></li>
+    <li data-menuanchor="curriculum_vitae"><a href="#curriculum_vitae">CV</a></li>
+</ul>
 
-    <div id="fullpage">
-        <!-- HOME SECTION -->
-        <div class="section active" id="home">
-            <div class="intro">
-                <div class="title-container">
-                    <h1>Thomas Cavallazzi</h1>
-                </div>
-
-                <p>
-                    Bienvenue sur ma page.<br>
-                    J'étudie à l'ENS Rennes et à l'Université de Rennes 1 depuis 2016 et j'ai
-                    passé l'agrégation de Mathématiques en 2019. Cette année, je poursuis en Master 2 Mathématiques
-                    fondamentales orienté Probabilités et EDP à l'Université de Rennes 1.
-                    <br><br>
-                    Vous trouverez sur cette page quelques documents que j'ai rédigés, notamment à l'issue de stages
-                    de recherche et également à l'issue de l'année de préparation à l'agrégation. N'hésitez surtout pas
-                    à me contacter si vous remarquez des erreurs ou si vous avez des questions !
-                </p>
+<div id="fullpage">
+    <!-- HOME SECTION -->
+    <div class="section active" id="home">
+        <div class="intro">
+            <div class="title-container">
+                <h1>Thomas Cavallazzi</h1>
             </div>
+
+            <p>
+                Je suis doctorant à l’Université de Rennes 1 dans l’équipe de processus stochastiques depuis Septembre
+                2020, sous la direction de Mihai Gradinaru et Paul-Eric Chaudru de Raynal.<br>
+                Je travaille sur des équations différentielles stochastiques de type McKean-Vlasov.
+                <br><br>
+                Je suis également moniteur à l’ENS Rennes où j’assure le TD Espaces vectoriels normés et calcul
+                différentiel en L3. Je participe également à la préparation à l’agrégation.
+
+            </p>
         </div>
+    </div>
 
-        <!-- AGREG SECTION -->
-        <div class="section" id="aggregation">
-            <h1>Agrégation</h1>
+    <!-- AGREG SECTION -->
+    <div class="section" id="aggregation">
+        <h1>Agrégation</h1>
 
-            <div class="text-container">
-                <p>
-                    J'ai préparé et passé l'agrégation de Mathématiques (option Probabilités et Statistiques) en
-                    2018-2019 à l'ENS Rennes et à l'Université de Rennes 1. Je rassemble sur cette page quelques
-                    documents que j'ai rédigés et qui pourront, je l'espère, aider ceux qui préparent ce concours.
-                    Je remercie toutes les personnes qui ont pu contribuer à ce document de près ou de loin :
-                    mes amis de Rennes, mes professeurs et les anciens agrégatifs dont les pages personnelles ont
-                    été une aide précieuse tout au long de l'année. Merci à Théo pour la relecture !
-                    <br><br>
-                    N'hésitez surtout pas à me contacter si vous avez une question ou une remarque ;
-                    surtout si vous décelez des erreurs : je les corrigerai rapidement !
-                    <br><br>
-                    Le document qui suit rassemble ce que j'ai écrit en ce qui concerne l'agrégation.
-                    Je n'ai rédigé que certains développements, probablement les plus originaux ou ceux
-                    auxquels j'ai ajouté une petite touche personnelle. Vous trouverez a minima pour chaque
-                    leçon les sources que j'ai utilisées. Certains peuvent sembler long d'une part car j'ai
-                    tendance à beaucoup rédiger et d'autre part car j'ai ajouté des détails et des résultats
-                    qu'on n'a évidemment pas le temps de présenter en 15 minutes, mais qui peuvent donner du
-                    recul ou founir des applications du développement. Quoi qu'il en soit, il est nécessaire
-                    de bien s'approprier un développement avant de le présenter. Il y a quelques développements
-                    de probabilités qui pourront, je l'espère, intéresser les plus probabilistes d'entre vous !
-                </p>
-            </div>
-            <a fancybox class="iframe" href="assets/pdf/Développements_agreg.pdf">
-                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                <span>Couplages et développements</span>
-            </a>
-            <div class="text-container">
-                <h3>Liste des couplages leçon/développements</h3>
+        <div class="text-container">
+            <p>
+                J'ai préparé et passé l'agrégation de Mathématiques (option Probabilités et Statistiques) en
+                2018-2019 à l'ENS Rennes et à l'Université de Rennes 1. Je rassemble sur cette page quelques
+                documents que j'ai rédigés et qui pourront, je l'espère, aider ceux qui préparent ce concours.
+                Je remercie toutes les personnes qui ont pu contribuer à ce document de près ou de loin :
+                mes amis de Rennes, mes professeurs et les anciens agrégatifs dont les pages personnelles ont
+                été une aide précieuse tout au long de l'année. Merci à Théo pour la relecture !
+                <br><br>
+                N'hésitez surtout pas à me contacter si vous avez une question ou une remarque ;
+                surtout si vous décelez des erreurs : je les corrigerai rapidement !
+                <br><br>
+                Le document qui suit rassemble ce que j'ai écrit en ce qui concerne l'agrégation.
+                Je n'ai rédigé que certains développements, probablement les plus originaux ou ceux
+                auxquels j'ai ajouté une petite touche personnelle. Vous trouverez a minima pour chaque
+                leçon les sources que j'ai utilisées. Certains peuvent sembler long d'une part car j'ai
+                tendance à beaucoup rédiger et d'autre part car j'ai ajouté des détails et des résultats
+                qu'on n'a évidemment pas le temps de présenter en 15 minutes, mais qui peuvent donner du
+                recul ou founir des applications du développement. Quoi qu'il en soit, il est nécessaire
+                de bien s'approprier un développement avant de le présenter. Il y a quelques développements
+                de probabilités qui pourront, je l'espère, intéresser les plus probabilistes d'entre vous !
+            </p>
+        </div>
+        <a fancybox class="iframe" href="assets/pdf/Développements_agreg.pdf">
+            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+            <span>Couplages et développements</span>
+        </a>
+        <div class="text-container">
+            <h3>Liste des couplages leçon/développements</h3>
 
-                <p>
-                    Ce document contient la liste des leçons d'Algèbre et de Géométrie ainsi que celles
-                    d'Analyse et de Probabilités (proposées en 2018-2019) ainsi que les développements
-                    qui rentrent (selon moi) dans chaque leçon. Les deux premiers sont les développements
-                    que j'ai choisis pour les oraux et ceux qui suivent sont d'autres possibilités parmi
-                    les développements que j'ai travaillés.
-                </p>
-            </div>
-            <a fancybox class="iframe" href="assets/pdf/Couplages.pdf">
-                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                <span>Liste des couplages</span>
-            </a>
-            <div class="text-container">
-                <h3>Développements</h3>
+            <p>
+                Ce document contient la liste des leçons d'Algèbre et de Géométrie ainsi que celles
+                d'Analyse et de Probabilités (proposées en 2018-2019) ainsi que les développements
+                qui rentrent (selon moi) dans chaque leçon. Les deux premiers sont les développements
+                que j'ai choisis pour les oraux et ceux qui suivent sont d'autres possibilités parmi
+                les développements que j'ai travaillés.
+            </p>
+        </div>
+        <a fancybox class="iframe" href="assets/pdf/Couplages.pdf">
+            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+            <span>Liste des couplages</span>
+        </a>
+        <div class="text-container">
+            <h3>Développements</h3>
 
-                <p class="left">
-                    Voici les développements que j'ai tapés.
-                </p>
+            <p class="left">
+                Voici les développements que j'ai tapés.
+            </p>
 
-                <table>
-                    <tr>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Hadamard-Lévy.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Théorème de Hadamard-Lévy</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Optimisation%20Hilbert.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Optimisation dans un Hilbert</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Fonctions%20lipschitziennes.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Représentation des fonctions lipschitziennes</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Equation%20de%20la%20chaleur.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Equation de la chaleur</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Morse.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Lemme de Morse</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Marche%20aléatoire.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Marche aléatoire sur Z^d</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Prokhorov%20et%20Lévy.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Théorèmes de Prokhorov et de Lévy</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Problèmes%20des%20moments.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Le problème des moments</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Sous-martingales.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Convergence presque sûre des sous-martingales bornées dans L^1</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a fancybox class="iframe" href="assets/pdf/developpements/Equirepartition.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Equirépartition presque sûre des orbites du doublement de l'angle</span>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Hadamard-Lévy.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Théorème de Hadamard-Lévy</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Optimisation%20Hilbert.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Optimisation dans un Hilbert</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Fonctions%20lipschitziennes.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Représentation des fonctions lipschitziennes</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Equation%20de%20la%20chaleur.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Equation de la chaleur</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Morse.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Lemme de Morse</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Marche%20aléatoire.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Marche aléatoire sur Z^d</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Prokhorov%20et%20Lévy.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Théorèmes de Prokhorov et de Lévy</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Problèmes%20des%20moments.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Le problème des moments</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Sous-martingales.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Convergence presque sûre des sous-martingales bornées dans L^1</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Equirepartition.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Equirépartition presque sûre des orbites du doublement de l'angle</span>
+                        </a>
+                    </td>
+                </tr>
+            </table>
 
-                <p>
-                    Et enfin un petit bonus, c'est un joli petit problème d'optimisation qui
-                    parle de l'ensemble des matrices bistochastiques, de ses points extrémaux,
-                    et du théorème de Krein-Milman.
-                </p>
+            <p>
+                Et enfin un petit bonus, c'est un joli petit problème d'optimisation qui
+                parle de l'ensemble des matrices bistochastiques, de ses points extrémaux,
+                et du théorème de Krein-Milman.
+                <br><br>
                 <a fancybox class="iframe" href="assets/pdf/developpements/Transport%20optimal%20discret.pdf">
                     <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
                     <span>Un problème de transport optimal discret</span>
                 </a>
-                <div class="text-container">
-                    <h3>Mémoire de M2 sur la leçon 215</h3>
-
+            </p>
+            <div class="text-container">
+                <h3>Mémoire de M2 sur la leçon 215</h3>
+                <br>
+                <p class="left">
                     <a fancybox class="iframe" href="assets/pdf/215_Applications%20différentiables.pdf">
                         <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
                         <span>Applications différentiables définies sur un ouvert de R^n. Exemples et applications.</span>
+                    </a>
+                </p>
+            </div>
+            <br>
+            <div class="text-container">
+                <h3>Bilan de mes oraux</h3>
+
+                <p class="left">
+                    J'ai écrit un petit compte rendu de comment se sont passés mes oraux.
+                    <a fancybox class="iframe" href="assets/pdf/bilan_oraux.pdf">
+                        <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                        <span>Bilan de mes oraux</span>
+                    </a>
+                </p>
+            </div>
+
+            <div class="text-container">
+                <h3>Liens utiles</h3>
+
+                <p class="left">Des pages d'amis qui ont passé l'agrégation avec moi :</p><br>
+                <ul class="left">
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/~tuntr932/index.html" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Théo Untrau
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/people/pierre.le-barbenchon/" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Pierre Le Barbenchon
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/people/emilie.tezenas-du-montcel/index.html"
+                           target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Emilie Tezenas du Montcel
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/people/julie.parreaux/index.html" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Julie Parreaux
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/people/clarence.kineider/index.html" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Clarence Kineider
+                        </a>
+                    </li>
+                </ul>
+
+                <br>
+
+                <p class="left">Des pages d'anciens agrégatifs qui m'ont été utiles :</p><br>
+
+                <ul class="left">
+                    <li>
+                        <a href="https://www.math.univ-toulouse.fr/~ckilque/" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Corentin Kilque
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.unige.ch/~alaurent/agreg.html" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Adrien Laurent
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/people/Antoine.Diez/" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Antoine Diez
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/~flemonni/" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Florian Lemonnier
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/~palphons/" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Paul Alphonse
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://perso.eleves.ens-rennes.fr/~afontain/agregation3.html" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Adrien Fontaine
+                        </a>
+                    </li>
+                </ul>
+                <br>
+
+                <p class="left">D'autres pages utiles :</p><br>
+
+                <ul class="left">
+                    <li>
+                        <a href="https://minerve.ens-rennes.fr/index.php/Accueil" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            La minerve de l'ENS Rennes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://agreg-maths.fr/" target="_blank">
+                            <img class="window-icon" src="assets/img/iconfenetre.jpg" alt="icone window">
+                            Une mine de développements
+                        </a>
+                    </li>
+                </ul>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- STAGE SECTION -->
+    <div class="section" id="traineeship">
+        <h1>Stages</h1>
+        <p>
+            Cette page contient les rapports des stages que j’ai effectués durant ma formation.
+        </p>
+
+        <div class="timeline">
+            <div class="container right to-left">
+                <div class="content">
+                    <h2>2020</h2>
+                    <p>
+                        À la fin de mon Master 2, j’ai effectué un stage de Recherche à l’Université de Rennes 1 encadré
+                        par Mihai Gradinaru et Paul-Eric Chaudru de Raynal. J’ai travaillé sur le calcul différentiel
+                        sur des espaces de mesures de probabilités et notamment la formule d’Itô pour un flot de
+                        mesures. J’ai également travaillé sur des applications de cette formule aux EDS de type
+                        McKean-Vlasov.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <h2>2019</h2>
+                    <p>
+                        Pendant mon Master 2, j’ai effectué un séminaire de Recherche encadré par Mihai Gradinaru. J’ai
+                        travaillé sur des processus stochastiques réfléchis.
+                    </p>
+                    <br>
+                    <a fancybox class="iframe" href="assets/pdf/SeminaireM2.pdf">
+                        <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                        <span>Consulter le mémoire</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container right to-left">
+                <div class="content">
+                    <h2>2018</h2>
+                    <p>
+                        À la fin de mon Master 1, j'ai effectué un stage au LPSM (Paris) encadré par
+                        François Bolley. J'ai travaillé sur la théorie de transport optimal avec une
+                        application à l'équation de Boltzmann, notamment en ce qui concerne la convergence
+                        vers l'équilibre.
+                    </p>
+                    <br>
+                    <a fancybox class="iframe" href="assets/pdf/Transport_optimal.pdf">
+                        <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                        <span>Consulter le mémoire</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <h2>2017</h2>
+                    <p>
+                        À la fin de ma Licence 3, j'ai effectué un stage à l'IMJ-PRG ( Paris ) encadré
+                        par Pierre-Antoine Guihéneuf. Mon stage portait sur l'étude des difféomorphismes du cercle.
+                        Plus précisément, si on considère l'orbite d'un point par ce difféomorphisme, que peut-on
+                        dire de la suite obtenue lorsqu'on regarde le dérivée de notre difféomorphisme le long de
+                        cette orbite de points ?
+                    </p>
+                    <br>
+                    <a fancybox class="iframe" href="assets/pdf/Mémoire_stage.pdf">
+                        <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                        <span>Consulter le mémoire</span>
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- STAGE SECTION -->
-        <div class="section" id="traineeship">
-            <h1>Stages</h1>
-            <p>
-                Cette page contient les deux rapports de stage que j'ai rédigés au cours de ma formation à l'ENS Rennes.
-            </p>
-
-            <div class="timeline">
-                <div class="container right to-left">
-                    <div class="content">
-                        <h2>2018</h2>
-                        <p>
-                            À la fin de mon Master 1, j'ai effectué un stage au LPSM ( Paris ) encadré par
-                            François Bolley. J'ai travaillé sur la théorie de transport optimal avec une
-                            application à l'équation de Boltzmann, notamment en ce qui concerne la convergence
-                            vers l'équilibre.
-                            <br><br>
-                            <a fancybox class="iframe" href="assets/pdf/Transport_optimal.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Consulter le mémoire</span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="container right">
-                    <div class="content">
-                        <h2>2017</h2>
-                        <p>
-                            À la fin de ma Licence 3, j'ai effectué un stage à l'IMJ-PRG ( Paris ) encadré
-                            par Pierre-Antoine Guihéneuf. Mon stage portait sur l'étude des difféomorphismes du cercle.
-                            Plus précisément, si on considère l'orbite d'un point par ce difféomorphisme, que peut-on
-                            dire de la suite obtenue lorsqu'on regarde le dérivée de notre difféomorphisme le long de
-                            cette orbite de points ?
-                            <br><br>
-                            <a fancybox class="iframe" href="assets/pdf/Mémoire_stage.pdf">
-                                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                                <span>Consulter le mémoire</span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CV SECTION -->
-        <div class="section" id="cv">
-            <iframe src="./assets/pdf/CV_Thomas_Cavallazzi.pdf"></iframe>
-        </div>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
-    <div id="footer">
-        <p>
-            Contactez-moi :
-            <a href="mailto:thomas.cavallazzi@ens-rennes.fr">thomas.cavallazzi@ens-rennes.fr</a>
-        </p>
+    <!-- CV SECTION -->
+    <div class="section" id="cv">
+        <iframe id="cv-embed" src="./assets/pdf/CV_Thomas_Cavallazzi.pdf"></iframe>
     </div>
+</div>
 
-    <script type="text/javascript" src="./dist/js/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="./dist/js/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="./dist/js/jquery.easing-1.3.pack.js"></script>
+<div id="footer">
+    <p>
+        Contact :
+        <a href="mailto:thomas.cavallazzi@ens-rennes.fr">thomas.cavallazzi@ens-rennes.fr</a>
+    </p>
+</div>
 
-    <script type="text/javascript" src="./dist/js/fullpage.min.js"></script>
-    <script type="text/javascript" src="./dist/js/scrolloverflow.min.js"></script>
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#bbb5bd', '#c5c3c6', '#dcdcdd', 'whitesmoke'],
-            menu: '#menu',
-            anchors: ['accueil', 'agregation', 'stages', 'curriculum_vitae'],
-            navigation: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['Accueil', 'Agrégation', 'Stages', 'CV'],
-            scrollOverflow: true
-        });
+<script type="text/javascript" src="./dist/js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="./dist/js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="./dist/js/jquery.easing-1.3.pack.js"></script>
 
-        $("[fancybox]").fancybox({
-            'transitionIn': 'elastic',
-            'transitionOut': 'elastic',
-            'speedIn':	250,
-            'speedOut':	250,
-            'overlayShow': true,
-            'width': '80%',
-            'height': '90%'
-        });
-    </script>
+<script type="text/javascript" src="./dist/js/fullpage.min.js"></script>
+<script type="text/javascript" src="./dist/js/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#cfdee7', '#d3e1e9', '#cfdee7', '#d3e1e9'],
+        menu: '#menu',
+        anchors: ['accueil', 'agregation', 'stages', 'curriculum_vitae'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Accueil', 'Agrégation', 'Stages', 'CV'],
+        scrollOverflow: true
+    });
+
+    $('[fancybox]').fancybox({
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 250,
+        'speedOut': 250,
+        'overlayShow': true,
+        'width': '80%',
+        'height': '90%'
+    });
+
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        document.getElementById('cv-embed').src = './assets/img/CV_Thomas_Cavallazzi.png';
+    }
+</script>
 </body>
 </html>
