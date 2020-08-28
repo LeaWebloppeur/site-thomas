@@ -61,11 +61,11 @@
                     <br><br>
                     Le document qui suit rassemble ce que j'ai écrit en ce qui concerne l'agrégation.
                     Je n'ai rédigé que certains développements, probablement les plus originaux ou ceux
-                    auxquels j'ai ajouté une petite touche personnelle. Vous trouverez a minima pour chaque
+                    auxquels j'ai ajouté une petite touche personnelle. Vous trouverez au minimum pour chaque
                     leçon les sources que j'ai utilisées. Certains peuvent sembler long d'une part car j'ai
                     tendance à beaucoup rédiger et d'autre part car j'ai ajouté des détails et des résultats
                     qu'on n'a évidemment pas le temps de présenter en 15 minutes, mais qui peuvent donner du
-                    recul ou founir des applications du développement. Quoi qu'il en soit, il est nécessaire
+                    recul ou fournir des applications du développement. Quoi qu'il en soit, il est nécessaire
                     de bien s'approprier un développement avant de le présenter. Il y a quelques développements
                     de probabilités qui pourront, je l'espère, intéresser les plus probabilistes d'entre vous !
                 </p>
@@ -169,16 +169,19 @@
                     </tr>
                 </table>
 
-                <p>
-                    Et enfin un petit bonus, c'est un joli petit problème d'optimisation qui
-                    parle de l'ensemble des matrices bistochastiques, de ses points extrémaux,
-                    et du théorème de Krein-Milman.
-                    <br><br>
-                    <a fancybox class="iframe" href="assets/pdf/developpements/Transport%20optimal%20discret.pdf">
-                        <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                        <span>Un problème de transport optimal discret</span>
-                    </a>
-                </p>
+                <div class="text-container">
+                    <p class="left">
+                        Et enfin un petit bonus, c'est un joli petit problème d'optimisation qui
+                        parle de l'ensemble des matrices bistochastiques, de ses points extrémaux,
+                        et du théorème de Krein-Milman.
+                        <br><br>
+                        <a fancybox class="iframe" href="assets/pdf/developpements/Transport%20optimal%20discret.pdf">
+                            <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                            <span>Un problème de transport optimal discret</span>
+                        </a>
+                    </p>
+                </div>
+                <br>
                 <div class="text-container">
                     <h3>Mémoire de M2 sur la leçon 215</h3>
                     <br>
@@ -194,7 +197,7 @@
                     <h3>Bilan de mes oraux</h3>
 
                     <p class="left">
-                        J'ai écrit un petit compte rendu de comment se sont passés mes oraux.
+                        J'ai écrit un petit compte rendu de la manière dont se sont déroulés mes oraux.
                         <a fancybox class="iframe" href="assets/pdf/bilan_oraux.pdf">
                             <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
                             <span>Bilan de mes oraux</span>
@@ -421,7 +424,7 @@
                             À la fin de ma Licence 3, j'ai effectué un stage à l'IMJ-PRG (Paris) encadré
                             par Pierre-Antoine Guihéneuf. Mon stage portait sur l'étude des difféomorphismes du cercle.
                             Plus précisément, si on considère l'orbite d'un point par ce difféomorphisme, que peut-on
-                            dire de la suite obtenue lorsqu'on regarde le dérivée de notre difféomorphisme le long de
+                            dire de la suite obtenue lorsqu'on regarde la dérivée de notre difféomorphisme le long de
                             cette orbite de points ?
                         </p>
                         <br>
@@ -442,20 +445,23 @@
         <!-- CV SECTION -->
 
         <div class="section" id="cv">
-        <br>
-        <br>
+            <br>
+            <br>
 
             <iframe id="cv-embed" src=""></iframe>
 
-        <br>
-        <br>
+            <br>
+            <br>
 
             <a fancybox class="iframe" href="assets/pdf/CV_Thomas_Cavallazzi.pdf">
-                    <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
-                        <span>Importer mon CV</span>
-                </a>
+                <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                <span>Télécharger mon CV</span>
+            </a>
+
+            <br>
+            <br>
         </div>
-      
+    </div>
 
     <div id="footer">
         <p>
@@ -481,6 +487,24 @@
             scrollOverflow: true
         });
 
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            document.getElementById('cv-embed').src = './assets/img/CV_Thomas_Cavallazzi.png';
+
+            document.querySelectorAll('a[fancybox].iframe').forEach(function(element) {
+                element.removeAttribute('fancybox');
+                element.setAttribute('old-fancybox', 'true');
+                element.setAttribute('target', '_blank');
+
+                var span = element.querySelector('span');
+
+                if (span.textContent === 'Consulter le mémoire') {
+                    span.textContent = 'Télécharger le mémoire';
+                }
+            });
+        } else {
+            document.getElementById('cv-embed').src = './assets/pdf/CV_Thomas_Cavallazzi.pdf';
+        }
+
         $('[fancybox]').fancybox({
             'transitionIn': 'elastic',
             'transitionOut': 'elastic',
@@ -490,14 +514,6 @@
             'width': '80%',
             'height': '90%'
         });
-
-        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-            document.getElementById('cv-embed').src = './assets/img/CV_Thomas_Cavallazzi.png';
-        } else {
-        	document.getElementById('cv-embed').src = './assets/pdf/CV_Thomas_Cavallazzi.pdf';
-
-        }
-
     </script>
 </body>
 </html>

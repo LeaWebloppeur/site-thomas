@@ -1,15 +1,18 @@
-a[fancybox] {
+a[fancybox],
+a[old-fancybox] {
     display: inline-block;
     color: #444;
     font-weight: bold;
     transition: .2s all;
 }
 
-a[fancybox] span {
+a[fancybox] span,
+a[old-fancybox] span {
     vertical-align: bottom;
 }
 
-a[fancybox]:hover {
+a[fancybox]:hover,
+a[old-fancybox]:hover {
     color: #444;
     transform: scale(1.03);
 }
@@ -23,7 +26,10 @@ a[fancybox]:hover {
 }
 
 #fp-nav ul li .fp-tooltip {
-    color: #333;
+    top: -4px;
+    padding: 3px 6px;
+    background-color: rgba(51,51,51,.7);
+    border-radius: .25rem;
 }
 
 #fullpage h2 {
@@ -234,4 +240,76 @@ h4 {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgba(0,0,0,0); }
+}
+
+/* Responsive
+---------------------------------------*/
+@media screen and (max-width: 700px) {
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #home p {
+        width: 90%;
+    }
+
+    #fullpage h2 {
+        font-size: 2rem;
+    }
+
+    #aggregation .text-container:first-of-type {
+        margin: 15px 0 10px;
+    }
+
+    #aggregation .text-container {
+        margin: 15px 0 10px;
+    }
+
+    #cv iframe {
+        width: 90vw;
+    }
+
+    #fp-nav.fp-right {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #home h1 {
+        font-size: 2.1rem;
+    }
+
+    #home p {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    #aggregation table td {
+        display: block;
+    }
+
+    #traineeship .timeline p {
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    #menu {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #menu li {
+        margin: 5px 0;
+    }
+
+    #menu li a,
+    #menu li.active a {
+        padding: 9px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    #footer p {
+        line-height: 1.3;
+    }
 }
