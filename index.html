@@ -41,7 +41,11 @@
 
         <!-- AGREG SECTION -->
         <div class="section" id="aggregation">
-            <h1>Agrégation</h1>
+            <br>
+            <br>
+            <br>
+
+            <h2>Agrégation</h2>
 
             <div class="text-container">
                 <p>
@@ -321,12 +325,41 @@
 
         <!-- ENSEIGNEMENT SECTION -->
         <div class="section" id="course">
-            <h1>Enseignement</h1>
+            <h2>Enseignement</h2>
+            <br>
+            <h3>TD d’EVNCD :</h3>
+            <br>
+            <p>
+            	<ul>
+            		<li>
+                            <img class="travaux-icon" src="assets/img/Logo_travaux.png" alt="icone travaux">
+                            <span> En travaux !</span>
+                    </li>
+
+                    <br>
+                    <br>
+
+            	</ul>
+            </p>
+
+            <h3>Complément d’analyse Hilbertienne en prépa agreg :</h3>
+            <br>
+            <br>
+            <img class="travaux-icon" src="assets/img/Logo_travaux.png" alt="icone travaux">
+                            <span> En travaux !</span>
+
+            <br>
+            <br>
+
         </div>
 
         <!-- STAGE SECTION -->
         <div class="section" id="traineeship">
-            <h1>Stages</h1>
+            <br>
+            <br>
+            <br>
+
+            <h2>Stages</h2>
             <p>
                 Cette page contient les rapports des stages que j’ai effectués durant ma formation.
             </p>
@@ -334,7 +367,8 @@
             <div class="timeline">
                 <div class="container right to-left">
                     <div class="content">
-                        <h2>2020</h2>
+                        <h4>2020</h4>
+                        <br>
                         <p>
                             À la fin de mon Master 2, j’ai effectué un stage de Recherche à l’Université de Rennes 1 encadré
                             par Mihai Gradinaru et Paul-Eric Chaudru de Raynal. J’ai travaillé sur le calcul différentiel
@@ -347,7 +381,8 @@
 
                 <div class="container right">
                     <div class="content">
-                        <h2>2019</h2>
+                        <h4>2019</h4>
+                        <br>
                         <p>
                             Pendant mon Master 2, j’ai effectué un séminaire de Recherche encadré par Mihai Gradinaru. J’ai
                             travaillé sur des processus stochastiques réfléchis.
@@ -362,7 +397,8 @@
 
                 <div class="container right to-left">
                     <div class="content">
-                        <h2>2018</h2>
+                        <h4>2018</h4>
+                        <br>
                         <p>
                             À la fin de mon Master 1, j'ai effectué un stage au LPSM (Paris) encadré par
                             François Bolley. J'ai travaillé sur la théorie de transport optimal avec une
@@ -379,9 +415,10 @@
 
                 <div class="container right">
                     <div class="content">
-                        <h2>2017</h2>
+                        <h4>2017</h4>
+                        <br>
                         <p>
-                            À la fin de ma Licence 3, j'ai effectué un stage à l'IMJ-PRG ( Paris ) encadré
+                            À la fin de ma Licence 3, j'ai effectué un stage à l'IMJ-PRG (Paris) encadré
                             par Pierre-Antoine Guihéneuf. Mon stage portait sur l'étude des difféomorphismes du cercle.
                             Plus précisément, si on considère l'orbite d'un point par ce difféomorphisme, que peut-on
                             dire de la suite obtenue lorsqu'on regarde le dérivée de notre difféomorphisme le long de
@@ -403,10 +440,22 @@
         </div>
 
         <!-- CV SECTION -->
+
         <div class="section" id="cv">
-            <iframe id="cv-embed" src="./assets/pdf/CV_Thomas_Cavallazzi.pdf"></iframe>
+        <br>
+        <br>
+
+            <iframe id="cv-embed" src=""></iframe>
+
+        <br>
+        <br>
+
+            <a fancybox class="iframe" href="assets/pdf/CV_Thomas_Cavallazzi.pdf">
+                    <img class="pdf-icon" src="assets/img/pdf.png" alt="icone pdf">
+                        <span>Importer mon CV</span>
+                </a>
         </div>
-    </div>
+      
 
     <div id="footer">
         <p>
@@ -444,7 +493,11 @@
 
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
             document.getElementById('cv-embed').src = './assets/img/CV_Thomas_Cavallazzi.png';
+        } else {
+        	document.getElementById('cv-embed').src = './assets/pdf/CV_Thomas_Cavallazzi.pdf';
+
         }
+
     </script>
 </body>
 </html>
